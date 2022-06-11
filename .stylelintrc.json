@@ -1,0 +1,30 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "declaration-colon-newline-after": "always-multi-line",
+    "property-no-unknown": [ true, {
+      "ingnoreProperties": ["content-visibility"] 
+    }]
+  },
+  "ignoreFiles": [
+    "build/**",
+    "coverage/**",
+    "dist/**",
+    "**/*.js",
+    "**/*.jsx", 
+    "**/*.ts",
+    "**/*.tsx" 
+  ] 
+}
+{
+  "extends": 
++  [
+    "stylelint-config-standard",
++    "stylelint-config-prettier"
++  ]
+}
+
+{
+  "extends": "stylelint-config-standard",
++  "customSyntax": "postcss-lit"
+}
